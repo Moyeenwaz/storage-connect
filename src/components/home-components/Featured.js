@@ -1,9 +1,15 @@
 import { Box, Heading, Text, Grid, GridItem } from "@chakra-ui/react";
-import CardContainer from "./Card";
-import { featured } from "../dummy";
+import CardContainer from "../Card";
+import { featured } from "../../dummy";
 const Featured = () => {
   return (
-    <Box boxSizing="border-box">
+    <Box
+      as="section"
+      overflow={"auto"}
+      bgImage="images/ellipse.png"
+      bgRepeat="no-repeat"
+      bgPosition={"top -180px left"}
+    >
       <Box maxW="70vw" m="auto" mt="100px" mb="60px">
         <Heading
           color="#021850"
@@ -28,7 +34,7 @@ const Featured = () => {
       <Grid
         w="95%"
         margin="auto"
-        templateColumns={["1fr", "1fr", "repeat(3, 1fr)"]}
+        templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
         gap="20px"
         justifyContent="center"
         alignItems="center"

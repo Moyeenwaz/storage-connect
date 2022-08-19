@@ -1,12 +1,22 @@
-import Featured from "../components/Featured";
-import Header from "../components/Header";
+import BuyASelfStorage from "../components/home-components/BuyASelfStorage";
+import Featured from "../components/home-components/Featured";
+import Header from "../components/home-components/Header";
+import HomeActiveListings from "../components/home-components/HomeActiveListings";
+import LearnStorage from "../components/home-components/LearnStorage";
+import SellYourSelfStorage from "../components/home-components/SellYourSelfStorage";
+import WriteToUs from "../components/home-components/WriteToUs";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <Featured />
-    </div>
+      <HomeActiveListings />
+      <SellYourSelfStorage />
+      <BuyASelfStorage />
+      <LearnStorage />
+      <WriteToUs />
+    </>
   );
 };
 

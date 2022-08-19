@@ -7,7 +7,13 @@ const Navbar = ({ color }) => {
       <Flex justify="space-between" align="center" w="90%" m="auto">
         <Flex justify="space-between" align="center">
           <Icon as={Logo} />
-          <Text ml="7px" fontSize="20px" as="h1" color="white">
+          <Text
+            ml="7px"
+            fontSize="20px"
+            as="h1"
+            color="white"
+            fontWeight={"bold"}
+          >
             Storage Connect
           </Text>
         </Flex>

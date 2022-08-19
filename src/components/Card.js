@@ -1,6 +1,22 @@
 import styled from "styled-components";
-import { HStack, Stack, Icon, Text, Button, Box } from "@chakra-ui/react";
-import { Location, BuildingIcon, SizeIcon, OccupantIcon } from "../Icons/Icons";
+import {
+  HStack,
+  Stack,
+  Icon,
+  Text,
+  Button,
+  Box,
+  Flex,
+  Image,
+} from "@chakra-ui/react";
+import {
+  Location,
+  BuildingIcon,
+  SizeIcon,
+  OccupantIcon,
+  TimeIcon,
+  TagIcon,
+} from "../Icons/Icons";
 
 const Card = styled.div`
   background: #f6f8fd;
@@ -15,10 +31,6 @@ const Card = styled.div`
 
   .img {
     width: 100%;
-  }
-
-  span {
-    font-weight: 400;
   }
 `;
 
@@ -84,3 +96,85 @@ const CardContainer = ({ img, location, totalUnits, occupancy, size }) => {
 };
 
 export default CardContainer;
+
+const CourseCard = styled.div`
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px rgba(1, 31, 109, 0.4);
+  width: 287px;
+  height: 433px;
+  .img-container {
+    width: 98%;
+    margin: 2px auto;
+  }
+
+  .img {
+    width: 100%;
+  }
+`;
+
+export const CourseCardContainer = ({
+  img,
+  courseTitle,
+  timePassed,
+  action,
+  tutor,
+  tutorImg,
+}) => {
+  return (
+    <CourseCard>
+      <div className="img-container">
+        <img src={img} alt="" className="img" />
+      </div>
+      <Box w="90%" margin="auto" mt="20px">
+        <Text
+          fontWeight="semibold"
+          fontSize="20px"
+          align="left"
+          lineHeight="30px"
+        >
+          {courseTitle}
+        </Text>
+      </Box>
+      <Flex
+        justify="space-between"
+        align="center"
+        w="90%"
+        margin="auto"
+        mt="20px"
+      >
+        <HStack spacing="4px" fontWeight="normal" fontSize="14px">
+          <Icon as={TimeIcon} />
+          <Text>{timePassed}</Text>
+        </HStack>
+        <HStack spacing="4px">
+          <Icon as={TagIcon} />
+          <Text>{action}</Text>
+        </HStack>
+        <HStack spacing="4px">
+          <Image src={tutorImg} />
+          <Text>{tutor}</Text>
+        </HStack>
+      </Flex>
+      <Box w="fit-content" m="auto" my="20px">
+        <Button
+          bg="#1849C6"
+          color="white"
+          fontSize="18px"
+          fontWeight="medium"
+          py="10px"
+          px="20px"
+          borderRadius="10px"
+          w="205px"
+          h="40px"
+          _hover={{
+            backgroundColor: "blue",
+          }}
+        >
+          Read more
+        </Button>
+      </Box>
+    </CourseCard>
+  );
+};

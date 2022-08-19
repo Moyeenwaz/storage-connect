@@ -1,5 +1,5 @@
 import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
-import Navbar from "./Navbar";
+import Navbar from "./../Navbar";
 
 const Header = () => {
   return (
