@@ -5,6 +5,7 @@ import HomeActiveListings from "../components/home-components/HomeActiveListings
 import LearnStorage from "../components/home-components/LearnStorage";
 import SellYourSelfStorage from "../components/home-components/SellYourSelfStorage";
 import WriteToUs from "../components/home-components/WriteToUs";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <BuyASelfStorage />
       <LearnStorage />
       <WriteToUs />
+      <Footer />
     </>
   );
 };
