@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Box, Text, HStack, Heading, Button, Image } from "@chakra-ui/react";
 
 const BuyASelfStorage = () => {

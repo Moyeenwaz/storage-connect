@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
 import Navbar from "./../Navbar";
 
@@ -12,7 +13,7 @@ const Header = () => {
       as="header"
     >
       <Navbar color="transparent" />
-      <Box maxW="676px" m="auto" mt="100px">
+      <Box maxW="676px" mx="auto" pt="100px" pb="60px">
         <Heading
           color="white"
           fontWeight="extrabold"
@@ -39,10 +40,8 @@ const Header = () => {
             color="#021850"
             fontSize="18px"
             fontWeight="medium"
-            pt="20px"
-            pb="20px"
-            pl="30px"
-            pr="30px"
+            py="20px"
+            px="30px"
             borderRadius="10px"
             w="250px"
             h="60px"

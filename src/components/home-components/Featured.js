@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Heading, Text, Grid, GridItem } from "@chakra-ui/react";
 import CardContainer from "../Card";
 import { featured } from "../../dummy";
@@ -13,7 +14,7 @@ const Featured = () => {
       <Box maxW="70vw" m="auto" mt="100px" mb="60px">
         <Heading
           color="#021850"
-          fontWeight="semibold"
+          fontWeight="600"
           textAlign="center"
           fontSize="35px"
           lineHeight="30px"

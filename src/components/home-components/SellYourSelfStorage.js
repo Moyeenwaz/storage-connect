@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Text, HStack, Heading, Button, Image } from "@chakra-ui/react";
 
 const SellYourSelfStorage = () => {
@@ -10,6 +11,7 @@ const SellYourSelfStorage = () => {
       bgSize="cover"
       overflow={"hidden"}
       bgPosition={"center"}
+      position="relative"
     >
       <HStack mt="200px">
         <Box maxW="640px" mt="100px" ml="100px" mb="60px">
@@ -52,7 +54,7 @@ const SellYourSelfStorage = () => {
             </Button>
           </Box>
         </Box>
-        <Box mr="40px">
+        <Box position="absolute" bottom="0" right="0" boxSize={"680px"}>
           <Image src="images/selfStorageImg.png" />
         </Box>
       </HStack>

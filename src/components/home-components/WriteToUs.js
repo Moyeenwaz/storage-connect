@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Flex, Heading, Text, Icon, Button } from "@chakra-ui/react";
 import { SendIcon } from "../../Icons/Icons";
 

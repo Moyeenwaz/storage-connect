@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Text, Heading, Grid, GridItem, Button } from "@chakra-ui/react";
 import { CourseCardContainer } from "../Card";
 import { courseDetails } from "../../dummy";

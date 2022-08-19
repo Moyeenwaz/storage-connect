@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Grid, GridItem, Heading, Text, Button } from "@chakra-ui/react";
 import ActiveListingSearch from "./ActiveListingSearch";
 import { homePageActiveListings } from "../../dummy";

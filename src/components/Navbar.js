@@ -1,3 +1,4 @@
+import React from "react";
 import { Flex, Icon, Text, HStack, Button } from "@chakra-ui/react";
 import { Logo } from "../Icons/Icons";
 
@@ -17,7 +18,7 @@ const Navbar = ({ color }) => {
             Storage Connect
           </Text>
         </Flex>
-        <HStack spacing="24px" fontSize="20px" color="white">
+        <HStack spacing="40px" fontSize="20px" color="white">
           <Text
             cursor="pointer"
             _hover={{
