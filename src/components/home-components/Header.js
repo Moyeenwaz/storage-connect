@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
 import Navbar from "./../Navbar";
 
-const Header = ({isActive, setIsActive}) => {
+const Header = () => {
   return (
     <Box
       h="600px"
@@ -12,7 +12,7 @@ const Header = ({isActive, setIsActive}) => {
       bgRepeat="no-repeat"
       as="header"
     >
-      <Navbar color="transparent" isActive={isActive} setIsActive={setIsActive}/>
+      <Navbar color="transparent" />
       <Box
         w={["500px", "500px", "676px", "676px"]}
         mx="auto"
