@@ -6,7 +6,7 @@ import CardContainer from "../Card";
 const HomeActiveListings = () => {
   return (
     <Box w="100vw" position={"relative"}>
-      <Box maxW="70vw" m="auto" mt="100px" mb="60px">
+      <Box w="70vw" m="auto" mt="100px" mb="60px">
         <Heading
           color="#2F2F2F"
           fontWeight="semibold"
@@ -35,11 +35,11 @@ const HomeActiveListings = () => {
         bgSize="cover"
         bgRepeat="no-repeat"
         mt="-60px"
-        overflow={"auto"}
+        overflow={"hidden"}
       >
         <Grid
           w="90%"
-          m="auto"
+          mx="auto"
           mt="120px"
           templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
           gap="20px"

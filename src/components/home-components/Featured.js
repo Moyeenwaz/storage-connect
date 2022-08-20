@@ -6,7 +6,7 @@ const Featured = () => {
   return (
     <Box
       as="section"
-      overflow={"auto"}
+      overflow={"hidden"}
       bgImage="images/ellipse.png"
       bgRepeat="no-repeat"
       bgPosition={"top -180px left"}

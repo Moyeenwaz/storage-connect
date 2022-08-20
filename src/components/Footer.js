@@ -10,6 +10,8 @@ import {
   Input,
   Select,
   Icon,
+  Link,
+  Flex,
 } from "@chakra-ui/react";
 import { LogoFooter } from "../Icons/Icons";
 import { Instagram, Facebook, Twitter, LinkedIn } from "../Icons/SocialIcons";
@@ -17,24 +19,24 @@ const Footer = () => {
   return (
     <Box pt="100px" pb="60px" bg="white">
       <Grid
-        templateColumns={["1fr", "1fr", "repeat(4, 1fr)"]}
-        gap="10px"
+        templateColumns={["1fr", "1fr", "repeat(2, 1fr)", "repeat(4, 1fr)"]}
+        gap="40px"
         width="95%"
         mx="auto"
       >
         <GridItem
           justifySelf="center"
-          bgImg="images/footerDecor.png"
+          bgImg={["none", "none", "images/footerDecor.png"]}
           bgRepeat="no-repeat"
           bgPosition="left -30px bottom -100px"
+          textAlign={["center", "center", "left", "left"]}
         >
-          <HStack spacing="10px">
+          <HStack spacing="10px" w="fit-content" mx={["auto", "auto", "", ""]}>
             <Icon as={LogoFooter} />
             <Text
               color="#212121"
               fontSize="22px"
               lineHeight="22px"
-              textAlign="left"
               fontWeight="bold"
             >
               Storage Connect
@@ -43,7 +45,6 @@ const Footer = () => {
           <Text
             fontSize="16px"
             color="#4A4A4A"
-            textAlign="left"
             lineHeight="24px"
             mt="18px"
             mb="32px"
@@ -51,19 +52,18 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             cupiditate accusamus. Molestias!
           </Text>
-          <Text
-            fontSize="16px"
-            color="#4A4A4A"
-            textAlign="left"
-            lineHeight="24px"
-            mb="32px"
-          >
+          <Text fontSize="16px" color="#4A4A4A" lineHeight="24px" mb="32px">
             @ StorageConnect 2022, All rights reserved
           </Text>
         </GridItem>
 
         <GridItem justifySelf={"center"}>
-          <Stack spacing="24px" color="#4A4A4A" fontSize="16px">
+          <Stack
+            spacing="24px"
+            color="#4A4A4A"
+            fontSize="16px"
+            align={["center", "center", "left", "left"]}
+          >
             <Text
               fontSize="18px"
               color="#2F2F2F"
@@ -73,19 +73,22 @@ const Footer = () => {
             >
               QUICK LINKS
             </Text>
-            <Text>Active Listings</Text>
-            <Text>Sell your Self Storage</Text>
-            <Text>Free Evaluation</Text>
-            <Text>Learn</Text>
+            <Link to="#">Active Listings</Link>
+            <Link to="#">Sell your Self Storage</Link>
+            <Link to="#">Free Evaluation</Link>
+            <Link to="#">Learn</Link>
           </Stack>
         </GridItem>
         <GridItem justifySelf="center" color="#4A4A4A" fontSize="16px">
-          <Box>
+          <Flex
+            direction="column"
+            justify={["center", "center", "left", "left"]}
+            textAlign={["center", "center", "left", "left"]}
+          >
             <Text
               color="#212121"
               fontSize="22px"
               lineHeight="22px"
-              textAlign="left"
               fontWeight="bold"
               mb="30px"
             >
@@ -93,23 +96,25 @@ const Footer = () => {
             </Text>
             <Text mb="10px">Get latest updates right in your inbox </Text>
             <Input placeholder="Enter your email" w="250px" mb="15px" />
+          </Flex>
+          <Box w="fit-content" mx={["auto", "auto", "0", "0"]}>
+            <Button
+              bg="#1849C6"
+              color="white"
+              fontSize="18px"
+              fontWeight="medium"
+              py="10px"
+              px="20px"
+              borderRadius="10px"
+              w="161px"
+              h="50px"
+              _hover={{
+                backgroundColor: "blue",
+              }}
+            >
+              Subscribe Now
+            </Button>
           </Box>
-          <Button
-            bg="#1849C6"
-            color="white"
-            fontSize="18px"
-            fontWeight="medium"
-            py="10px"
-            px="20px"
-            borderRadius="10px"
-            w="161px"
-            h="50px"
-            _hover={{
-              backgroundColor: "blue",
-            }}
-          >
-            Subscribe Now
-          </Button>
         </GridItem>
         <GridItem
           justifySelf="center"

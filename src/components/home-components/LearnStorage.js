@@ -15,7 +15,7 @@ const LearnStorage = () => {
       position="relative"
       mt="-60px"
     >
-      <Box maxW="800px" m="auto" mt="100px" mb="60px">
+      <Box w={["70vw", "70vw", "800px", "800px"]} m="auto" mt="100px" mb="60px">
         <Heading
           color="white"
           fontWeight="semibold"

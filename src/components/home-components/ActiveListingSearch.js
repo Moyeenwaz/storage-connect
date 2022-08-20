@@ -23,16 +23,17 @@ const ActiveListingSearch = () => {
     <Flex
       justify="space-between"
       align="center"
-      maxW="1200px"
+      w={["90%", "90%", "90%", "1200px"]}
       m="auto"
       borderRadius="20px"
       boxShadow="0px 5px 50px rgba(1, 31, 109, 0.1)"
-      h="160px"
+      h={["auto", "auto", "auto", "160px"]}
       px="34px"
       py="30px"
       bg="white"
       overflow={"hidden"}
       position="relative"
+      direction={["column", "column", "column", "row"]}
     >
       <Stack
         color="color: rgba(0, 1, 3, 0.7);"
