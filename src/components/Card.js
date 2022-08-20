@@ -33,6 +33,9 @@ const Card = styled.div`
   .img {
     width: 100%;
   }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 const CardContainer = ({ img, location, totalUnits, occupancy, size }) => {
@@ -71,7 +74,7 @@ const CardContainer = ({ img, location, totalUnits, occupancy, size }) => {
           </Text>
         </HStack>
       </Stack>
-      <Box w="fit-content" m="auto">
+      <Box w="fit-content" mx="auto">
         <Button
           bg="#1849C6"
           color="white"
@@ -80,7 +83,7 @@ const CardContainer = ({ img, location, totalUnits, occupancy, size }) => {
           py="15px"
           px="20px"
           borderRadius="10px"
-          w="277px"
+          w={["205px", "205px", "205px", "277px"]}
           h="50px"
           mt="30px"
           _hover={{
@@ -156,7 +159,7 @@ export const CourseCardContainer = ({
           <Text>{tutor}</Text>
         </HStack>
       </Flex>
-      <Box w="fit-content" m="auto" my="20px">
+      <Box w="fit-content" mx="auto" my="20px">
         <Button
           bg="#1849C6"
           color="white"

@@ -28,16 +28,16 @@ const WriteToUs = () => {
         <Box w={["400px", "400px", "600px", "600px"]}>
           <Heading
             color="#021850"
-            fontWeight="bold"
+            fontWeight={["semibold", "semibold", "bold"]}
             textAlign="center"
-            fontSize="35px"
+            fontSize={["25px", "25px", "35px"]}
             lineHeight="30px"
           >
             Any Queries? Reach Out To Us.
           </Heading>
           <Text
             color="#000103"
-            fontSize="18px"
+            fontSize={["16px", "16px", "18px"]}
             textAlign="center"
             lineHeight="30px"
             mt="20px"

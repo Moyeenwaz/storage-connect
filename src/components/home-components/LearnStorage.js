@@ -39,7 +39,7 @@ const LearnStorage = () => {
       <Grid
         mt="72px"
         w="90%"
-        m="auto"
+        mx="auto"
         templateColumns={["1fr", "1fr", "1fr", "repeat(4, 1fr)"]}
         gap="30px"
       >

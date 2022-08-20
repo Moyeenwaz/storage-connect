@@ -34,7 +34,7 @@ const Featured = () => {
       </Box>
       <Grid
         w="95%"
-        margin="auto"
+        mx="auto"
         templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
         gap="20px"
         justifyContent="center"
