@@ -46,7 +46,7 @@ const Navbar = ({ color }) => {
             _active={{
               background: "none",
             }}
-            display={["block", "block", "none", "none"]}
+            display={["block", "block", "block", "none"]}
             zIndex="999"
           />
 
@@ -54,7 +54,7 @@ const Navbar = ({ color }) => {
             spacing="40px"
             fontSize="20px"
             color="white"
-            display={["none", "none", "block", "block"]}
+            display={["none", "none", "none", "block"]}
           >
             <Link
               to="#"
