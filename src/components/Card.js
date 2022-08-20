@@ -129,7 +129,7 @@ export const CourseCardContainer = ({
       <div className="img-container">
         <img src={img} alt="" className="img" />
       </div>
-      <Box w="90%" margin="auto" mt="20px">
+      <Box w="90%" mx="auto" mt="20px">
         <Text
           fontWeight="semibold"
           fontSize="20px"

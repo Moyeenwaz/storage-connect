@@ -15,6 +15,7 @@ const Header = () => {
       <Navbar color="transparent" />
       <Box
         w={["500px", "500px", "676px", "676px"]}
+        my="0"
         mx="auto"
         pt="100px"
         pb="60px"
@@ -23,7 +24,7 @@ const Header = () => {
           color="white"
           fontWeight={["bold", "bold", "extrabold"]}
           textAlign="center"
-          fontSize={["40px", "40px", "60px"]}
+          fontSize={["45px", "45px", "60px"]}
           lineHeight={["50px", "50px", "75px"]}
         >
           Self Storage Business <br />
@@ -31,9 +32,9 @@ const Header = () => {
         </Heading>
         <Text
           color="white"
-          fontSize={["16px", "16px", "20px"]}
+          fontSize={["18px", "18px", "20px"]}
           textAlign="center"
-          lineHeight="33px"
+          lineHeight={["25px", "25px", "33px"]}
           mt="10px"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
@@ -41,9 +42,8 @@ const Header = () => {
         </Text>
         <Flex
           w="522px"
-          h="100px"
           justify="space-between"
-          m="auto"
+          mx="auto"
           mt="52px"
           align="center"
           direction={["column", "column", "row", "row"]}
@@ -51,12 +51,12 @@ const Header = () => {
           <Button
             bg="#FFCE31"
             color="#021850"
-            fontSize="18px"
+            fontSize={["16px", "16px", "20px"]}
             fontWeight="medium"
             py="20px"
             px="30px"
             borderRadius="10px"
-            w="250px"
+            w={["200px", "200px", "200px", "250px"]}
             h="60px"
           >
             Sell Your Self Storage
@@ -64,12 +64,12 @@ const Header = () => {
           <Button
             bg="white"
             color="#000103"
-            fontSize="18px"
+            fontSize={["16px", "16px", "20px"]}
             fontWeight="medium"
             py="20px"
             px="30px"
             borderRadius="10px"
-            w="250px"
+            w={["200px", "200px", "200px", "250px"]}
             h="60px"
             mt={["30px", "30px", "0", "0"]}
           >

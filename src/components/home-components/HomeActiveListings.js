@@ -38,9 +38,9 @@ const HomeActiveListings = () => {
         overflow={"hidden"}
       >
         <Grid
+          mt="120px"
           w="90%"
           mx="auto"
-          mt="120px"
           templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
           gap="20px"
         >
@@ -57,7 +57,7 @@ const HomeActiveListings = () => {
             </GridItem>
           ))}
         </Grid>
-        <Box w="fit-content" m="auto" mt="78px" mb="93px">
+        <Box w="fit-content" mx="auto" mt="78px" mb="93px">
           <Button
             bg="#FFCE31"
             color="#021850"
@@ -66,7 +66,7 @@ const HomeActiveListings = () => {
             py="30px"
             px="88px"
             borderRadius="10px"
-            w="364px"
+            w={["300px", "300px", "300px", "364px"]}
             h="80px"
           >
             View More Listings

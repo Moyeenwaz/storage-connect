@@ -66,7 +66,7 @@ const LearnStorage = () => {
           py="30px"
           px="88px"
           borderRadius="10px"
-          w="364px"
+          w={["300px", "300px", "300px", "364px"]}
           h="80px"
         >
           View More Courses

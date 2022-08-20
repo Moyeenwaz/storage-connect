@@ -6,7 +6,7 @@ const BuyASelfStorage = () => {
   return (
     <Box w="100vw" overflow={"hidden"}>
       <HStack mt="200px">
-        <Box>
+        <Box boxSize={"680px"}>
           <Image src="images/buySelfStorage.png" />
         </Box>
         <Box maxW="640px" marginRight="40px">
