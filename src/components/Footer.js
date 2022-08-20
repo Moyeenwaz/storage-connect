@@ -12,13 +12,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { LogoFooter } from "../Icons/Icons";
-import {
-  Instagram,
-  Facebook,
-  Twitter,
-  LinkedIn,
-  Global,
-} from "../Icons/SocialIcons";
+import { Instagram, Facebook, Twitter, LinkedIn } from "../Icons/SocialIcons";
 const Footer = () => {
   return (
     <Box pt="100px" pb="60px" bg="white">
