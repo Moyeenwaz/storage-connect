@@ -22,9 +22,9 @@ const ActiveListingSearch = () => {
   return (
     <Flex
       justify="space-between"
-      align="center"
-      w={["90%", "90%", "90%", "1200px"]}
-      m="auto"
+      align={["", "", "", "center"]}
+      w={["80%", "80%", "80%", "1200px"]}
+      mx="auto"
       borderRadius="20px"
       boxShadow="0px 5px 50px rgba(1, 31, 109, 0.1)"
       h={["auto", "auto", "auto", "160px"]}
@@ -40,14 +40,14 @@ const ActiveListingSearch = () => {
         fontWeight="normal"
         fontSize="20px"
         spacing="15px"
+        align="left"
       >
         <Text as="label">Location</Text>
-        <InputGroup h="60px">
+        <InputGroup h="60px" width={["80%", "80%", "80%", "400px"]}>
           <InputLeftElement>
             <Icon as={Location} />
           </InputLeftElement>
           <Input
-            width="400px"
             placeholder="Search Location"
             fontSize="16px"
             _placeholder={{
@@ -64,12 +64,11 @@ const ActiveListingSearch = () => {
       >
         <Text as="label">Properties</Text>
         <HStack spacing="20px">
-          <InputGroup h="60px">
+          <InputGroup h="60px" width={["80%", "80%", "80%", "200px"]}>
             <InputLeftElement>
               <Icon as={BuildingIcon} />
             </InputLeftElement>
             <Input
-              w="200px"
               placeholder="Unit Count"
               fontSize="16px"
               _placeholder={{
@@ -77,12 +76,11 @@ const ActiveListingSearch = () => {
               }}
             />
           </InputGroup>
-          <InputGroup h="60px">
+          <InputGroup h="60px" width={["80%", "80%", "80%", "200px"]}>
             <InputLeftElement>
               <Icon as={OccupantIcon} />
             </InputLeftElement>
             <Input
-              w="200px"
               placeholder="Unit Count"
               fontSize="16px"
               _placeholder={{
@@ -99,10 +97,8 @@ const ActiveListingSearch = () => {
         color="#021850"
         fontSize="18px"
         fontWeight="medium"
-        pt="20px"
-        pb="20px"
-        pl="24px"
-        pr="24px"
+        py="20px"
+        px="24px"
         borderRadius="10px"
         w="148px"
         h="60px"
