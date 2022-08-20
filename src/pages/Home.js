@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BuyASelfStorage from "../components/home-components/BuyASelfStorage";
 import Featured from "../components/home-components/Featured";
 import Header from "../components/home-components/Header";
