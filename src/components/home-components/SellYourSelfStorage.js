@@ -12,12 +12,23 @@ const SellYourSelfStorage = () => {
       bgPosition={"center"}
       position="relative"
     >
-      <Flex mt="200px" justify="space-between">
-        <Box maxW="640px" mt="100px" ml="100px" mb="60px">
+      <Flex
+        mt="200px"
+        justify="space-between"
+        align="center"
+        flexDirection={["column", "column", "column", "row"]}
+      >
+        <Box
+          maxW={["70vw", "70vw", "640px"]}
+          mt="100px"
+          ml={["0", "0", "0", "100px"]}
+          mb="60px"
+          order={["2", "2", "2", "1"]}
+        >
           <Heading
             color="#021850"
             fontWeight="semibold"
-            textAlign="left"
+            textAlign={["center", "center", "center", "left"]}
             fontSize="35px"
             lineHeight="30px"
           >
@@ -26,7 +37,7 @@ const SellYourSelfStorage = () => {
           <Text
             color="#000103"
             fontSize="18px"
-            textAlign="left"
+            textAlign={["center", "center", "center", "left"]}
             lineHeight="30px"
             mt="20px"
           >
@@ -34,7 +45,7 @@ const SellYourSelfStorage = () => {
             quidem quo nobis amet Lorem ipsum dolor sit amet consectetur. Lorem
             ipsum dolor sit amet consectetur.
           </Text>
-          <Box w="fit-content" mt="40px">
+          <Box w="fit-content" mt="40px" mx={["auto", "auto", "auto", "0"]}>
             <Button
               bg="#1849C6"
               color="white"
@@ -53,7 +64,10 @@ const SellYourSelfStorage = () => {
             </Button>
           </Box>
         </Box>
-        <Box boxSize={"680px"}>
+        <Box
+          boxSize={["70vw", "70vw", "70vw", "680px"]}
+          order={["1", "1", "1", "2"]}
+        >
           <Image src="images/selfStorageImg.png" />
         </Box>
       </Flex>

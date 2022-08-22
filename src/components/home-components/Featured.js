@@ -35,10 +35,10 @@ const Featured = () => {
       <Grid
         w="95%"
         mx="auto"
+        justifyContent="center"
+        align="center"
         templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
         gap="20px"
-        justifyContent="center"
-        alignItems="center"
       >
         {featured.map((feature) => (
           <GridItem justifySelf="center">

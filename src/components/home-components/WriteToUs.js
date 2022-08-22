@@ -16,16 +16,16 @@ const WriteToUs = () => {
       overflow="hidden"
     >
       <Flex
-        w={["90vw", "90vw", "98vw", "80vw"]}
+        w={["80vw", "80vw", "80vw", "80vw"]}
         h="295px"
         justifyContent="space-around"
         align="center"
         bgColor="rgba(255, 255, 255, 0.9);"
         borderRadius="10px"
         boxShadow="box-shadow: 0px 30px 40px rgba(24, 73, 198, 0.1);"
-        direction={["column", "column", "row", "row"]}
+        direction={["column", "column", "column", "row"]}
       >
-        <Box w={["400px", "400px", "600px", "600px"]}>
+        <Box w={["80%", "80%", "600px", "600px"]}>
           <Heading
             color="#021850"
             fontWeight={["semibold", "semibold", "bold"]}

@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
-import Navbar from "./../Navbar";
+import Navbar from "../Navbar";
 
 const Header = () => {
   return (
     <Box
-      h="600px"
+      h={["fit-content", "fit-content", "600px"]}
       w="100vw"
       bg="url(images/headerbgImg.png)"
       bgSize="cover"
@@ -14,7 +14,7 @@ const Header = () => {
     >
       <Navbar color="transparent" />
       <Box
-        w={["500px", "500px", "676px", "676px"]}
+        w={["90vw", "90vw", "676px", "676px"]}
         my="0"
         mx="auto"
         pt="100px"
@@ -41,7 +41,7 @@ const Header = () => {
           quidem quo nobis amet atque nisi temporibus.
         </Text>
         <Flex
-          w="522px"
+          w={["fit-content", "fit-content", "522px", "522px"]}
           justify="space-between"
           mx="auto"
           mt="52px"
@@ -51,12 +51,12 @@ const Header = () => {
           <Button
             bg="#FFCE31"
             color="#021850"
-            fontSize={["16px", "16px", "20px"]}
+            fontSize={["14px", "14px", "20px"]}
             fontWeight="medium"
             py="20px"
-            px="30px"
+            px={"30px"}
             borderRadius="10px"
-            w={["200px", "200px", "200px", "250px"]}
+            w={["200px", "200px", "250px", "250px"]}
             h="60px"
           >
             Sell Your Self Storage
@@ -64,12 +64,12 @@ const Header = () => {
           <Button
             bg="white"
             color="#000103"
-            fontSize={["16px", "16px", "20px"]}
+            fontSize={["14px", "14px", "20px"]}
             fontWeight="medium"
             py="20px"
             px="30px"
             borderRadius="10px"
-            w={["200px", "200px", "200px", "250px"]}
+            w={["200px", "200px", "250px", "250px"]}
             h="60px"
             mt={["30px", "30px", "0", "0"]}
           >

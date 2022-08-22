@@ -1,19 +1,28 @@
 import React from "react";
 
-import { Box, Text, HStack, Heading, Button, Image } from "@chakra-ui/react";
+import { Box, Text, Flex, Heading, Button, Image } from "@chakra-ui/react";
 
 const BuyASelfStorage = () => {
   return (
     <Box w="100vw" overflow={"hidden"}>
-      <HStack mt="200px">
-        <Box boxSize={"680px"}>
+      <Flex
+        mt="200px"
+        justify="space-between"
+        align="center"
+        flexDirection={["column", "column", "column", "row"]}
+      >
+        <Box boxSize={["70vw", "70vw", "70vw", "680px"]}>
           <Image src="images/buySelfStorage.png" />
         </Box>
-        <Box maxW="640px" marginRight="40px">
+        <Box
+          maxW={["70vw", "70vw", "640px"]}
+          mr={["0", "0", "0", "40px"]}
+          mt="100px"
+        >
           <Heading
             color="#021850"
             fontWeight="semibold"
-            textAlign="left"
+            textAlign={["center", "center", "center", "left"]}
             fontSize="35px"
             lineHeight="30px"
           >
@@ -22,7 +31,7 @@ const BuyASelfStorage = () => {
           <Text
             color="#000103"
             fontSize="18px"
-            textAlign="left"
+            textAlign={["center", "center", "center", "left"]}
             lineHeight="30px"
             mt="20px"
           >
@@ -30,7 +39,7 @@ const BuyASelfStorage = () => {
             quidem quo nobis amet Lorem ipsum dolor sit amet consectetur. Lorem
             ipsum dolor sit amet consectetur.
           </Text>
-          <Box w="fit-content" mt="40px">
+          <Box w="fit-content" mt="40px" mx={["auto", "auto", "auto", "0"]}>
             <Button
               bg="#1849C6"
               color="white"
@@ -49,7 +58,7 @@ const BuyASelfStorage = () => {
             </Button>
           </Box>
         </Box>
-      </HStack>
+      </Flex>
     </Box>
   );
 };

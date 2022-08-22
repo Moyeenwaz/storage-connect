@@ -13,7 +13,7 @@ const LearnStorage = () => {
       bgPosition={"center"}
       w="100vw"
       position="relative"
-      mt="-60px"
+      mt={["60px", "60px", "60px", "-60px"]}
     >
       <Box w={["70vw", "70vw", "800px", "800px"]} m="auto" mt="100px" mb="60px">
         <Heading
@@ -40,7 +40,9 @@ const LearnStorage = () => {
         mt="72px"
         w="90%"
         mx="auto"
-        templateColumns={["1fr", "1fr", "1fr", "repeat(4, 1fr)"]}
+        justifyContent="center"
+        align="center"
+        templateColumns={["1fr", "1fr", "repeat(2, 1fr)", "repeat(4, 1fr)"]}
         gap="30px"
       >
         {courseDetails.map((course) => (

@@ -23,7 +23,7 @@ const ActiveListingSearch = () => {
     <Flex
       justify="space-between"
       align={["", "", "", "center"]}
-      w={["80%", "80%", "80%", "1200px"]}
+      w={["90%", "90%", "90%", "1200px"]}
       mx="auto"
       borderRadius="20px"
       boxShadow="0px 5px 50px rgba(1, 31, 109, 0.1)"

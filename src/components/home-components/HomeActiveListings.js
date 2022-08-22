@@ -40,8 +40,10 @@ const HomeActiveListings = () => {
         <Grid
           mt="120px"
           w="90%"
+          justifyContent="center"
+          align="center"
           mx="auto"
-          templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
+          templateColumns={["1fr", "1fr", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
           gap="20px"
         >
           {homePageActiveListings.map((listing) => (
@@ -57,6 +59,7 @@ const HomeActiveListings = () => {
             </GridItem>
           ))}
         </Grid>
+
         <Box w="fit-content" mx="auto" mt="78px" mb="93px">
           <Button
             bg="#FFCE31"
