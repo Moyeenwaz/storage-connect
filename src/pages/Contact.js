@@ -84,6 +84,9 @@ const Contact = () => {
               w={["80%", "80%", "563px"]}
               resize="vertical"
               backgroundColor={"#F6F8FD"}
+              _focus={{
+                backgroundColor: "white",
+              }}
             />
 
             <Button
