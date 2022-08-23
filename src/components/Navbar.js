@@ -78,7 +78,8 @@ const Navbar = ({ color }) => {
               Sell Your Self Storage
             </Link>
             <Link
-              to="#"
+              as={LinkR}
+              to="/free-evaluation"
               _hover={{
                 color: "#FFCE31",
               }}
@@ -148,7 +149,8 @@ const Navbar = ({ color }) => {
           Sell Your Self Storage
         </Link>
         <Link
-          to="#"
+          as={LinkR}
+          to="/free-evaluation"
           _hover={{
             color: "#FFCE31",
           }}
