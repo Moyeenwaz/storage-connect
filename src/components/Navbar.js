@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Flex,
   Icon,
-  Text,
   HStack,
   Button,
   Link,
@@ -12,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { Logo } from "../Icons/Icons";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link as LinkR } from "react-router-dom";
 
 const Navbar = ({ color }) => {
   const [isActive, setIsActive] = useState(false);
@@ -23,15 +23,19 @@ const Navbar = ({ color }) => {
         <Flex justify="space-between" align="center" w="90%" m="auto">
           <Flex justify="space-between" align="center">
             <Icon as={Logo} />
-            <Text
+            <Link
               ml="7px"
               fontSize="20px"
-              as="h1"
+              as={LinkR}
+              to="/"
               color="white"
               fontWeight={"bold"}
+              _hover={{
+                textDecoration: "none",
+              }}
             >
               Storage Connect
-            </Text>
+            </Link>
           </Flex>
 
           <IconButton
@@ -89,6 +93,9 @@ const Navbar = ({ color }) => {
               Learn
             </Link>
             <Button
+              variant="link"
+              as={LinkR}
+              to="/contact"
               bg="#FFCE31"
               color="#021850"
               fontSize="18px"
@@ -98,6 +105,10 @@ const Navbar = ({ color }) => {
               borderRadius="10px"
               w="110px"
               h="36px"
+              _hover={{
+                textDecoration: "none",
+                backgroundColor: "lightGray",
+              }}
             >
               Contact
             </Button>
@@ -151,6 +162,9 @@ const Navbar = ({ color }) => {
           Learn
         </Link>
         <Button
+          variant="link"
+          as={LinkR}
+          to="/contact"
           bg="#FFCE31"
           color="#021850"
           fontSize="18px"
@@ -160,6 +174,10 @@ const Navbar = ({ color }) => {
           borderRadius="10px"
           w="110px"
           h="36px"
+          _hover={{
+            textDecoration: "none",
+            backgroundColor: "lightGray",
+          }}
         >
           Contact
         </Button>
