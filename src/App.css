@@ -5,3 +5,18 @@ html {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
+
+/* .slick-slide > div {
+  margin: 0 20px !important;
+}
+.slick-list {
+  margin: 0 -20px !important;
+} */
+
+.slick-dots li.slick-active button:before {
+  color: blue !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: blue !important;
+}

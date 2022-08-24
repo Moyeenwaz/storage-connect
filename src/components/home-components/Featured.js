@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, Heading, Text, Grid, GridItem } from "@chakra-ui/react";
-import CardContainer from "../Card";
-import { featured } from "../../dummy";
+import { Box, Heading, Text } from "@chakra-ui/react";
+import Carousel from "../Carousel";
 const Featured = () => {
   return (
     <Box
@@ -32,27 +31,10 @@ const Featured = () => {
           quidem quo nobis amet Lorem ipsum dolor sit amet consectetur.
         </Text>
       </Box>
-      <Grid
-        w="95%"
-        mx="auto"
-        justifyContent="center"
-        align="center"
-        templateColumns={["1fr", "1fr", "1fr", "repeat(3, 1fr)"]}
-        gap="20px"
-      >
-        {featured.map((feature) => (
-          <GridItem justifySelf="center">
-            <CardContainer
-              location={feature.location}
-              size={feature.size}
-              occupancy={feature.occupancy}
-              img={feature.img}
-              key={feature.id}
-              totalUnits={feature.totalUnits}
-            />
-          </GridItem>
-        ))}
-      </Grid>
+
+      <Box w="95%" mx="auto" mb="50px">
+        <Carousel />
+      </Box>
     </Box>
   );
 };

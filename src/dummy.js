@@ -23,6 +23,30 @@ export const featured = [
     occupancy: "90%",
     size: 70223,
   },
+  {
+    id: Math.random() * 100,
+    img: "images/sampleImg.png",
+    location: "Maryland, Baltimore",
+    totalUnits: 89,
+    occupancy: "90%",
+    size: 70223,
+  },
+  {
+    id: Math.random() * 100,
+    img: "images/sampleImg.png",
+    location: "Maryland, Baltimore",
+    totalUnits: 89,
+    occupancy: "90%",
+    size: 70223,
+  },
+  {
+    id: Math.random() * 100,
+    img: "images/sampleImg.png",
+    location: "Maryland, Baltimore",
+    totalUnits: 89,
+    occupancy: "90%",
+    size: 70223,
+  },
 ];
 
 export const homePageActiveListings = [
