@@ -48,7 +48,7 @@ const InquirySent = () => {
             py="10px"
             px={"30px"}
             borderRadius="10px"
-            w="144px"
+            w="191px"
             h="50px"
             _hover={{
               backgroundColor: "blue",

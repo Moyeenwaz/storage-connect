@@ -181,7 +181,7 @@ const SellStorage = () => {
               py="20px"
               px="30px"
               borderRadius="10px"
-              w={["80%", "80%", "418px"]}
+              w={["100%", "100%", "418px"]}
               h="60px"
               _hover={{
                 backgroundColor: "blue",

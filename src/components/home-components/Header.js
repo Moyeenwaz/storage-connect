@@ -67,13 +67,13 @@ const Header = () => {
             fontSize={["14px", "14px", "20px"]}
             fontWeight="medium"
             py="20px"
-            px="30px"
+            px="35px"
             borderRadius="10px"
             w={["200px", "200px", "250px", "250px"]}
             h="60px"
             mt={["30px", "30px", "0", "0"]}
           >
-            Sell Your Self Storage
+            Active Self Storage Listings
           </Button>
         </Flex>
       </Box>

@@ -57,6 +57,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "50%",
     size: 40223,
+    heading: "Self Storage Heading",
   },
   {
     id: Math.random() * 100,
@@ -65,6 +66,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "70%",
     size: 30223,
+    heading: "Self Storage Heading",
   },
   {
     id: Math.random() * 100,
@@ -73,6 +75,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "90%",
     size: 70223,
+    heading: "Self Storage Heading",
   },
   {
     id: Math.random() * 100,
@@ -81,6 +84,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "50%",
     size: 40223,
+    heading: "Self Storage Heading",
   },
   {
     id: Math.random() * 100,
@@ -89,6 +93,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "70%",
     size: 30223,
+    heading: "Self Storage Heading",
   },
   {
     id: Math.random() * 100,
@@ -97,6 +102,7 @@ export const homePageActiveListings = [
     totalUnits: 89,
     occupancy: "90%",
     size: 70223,
+    heading: "Self Storage Heading",
   },
 ];
 

@@ -61,7 +61,8 @@ const Navbar = ({ color }) => {
             display={["none", "none", "none", "block"]}
           >
             <Link
-              to="#"
+              as={LinkR}
+              to="/active-listings"
               _hover={{
                 color: "#FFCE31",
               }}
@@ -87,7 +88,8 @@ const Navbar = ({ color }) => {
               Free Evaluation
             </Link>
             <Link
-              to="#"
+              as={LinkR}
+              to="/learn"
               _hover={{
                 color: "#FFCE31",
               }}
@@ -132,7 +134,8 @@ const Navbar = ({ color }) => {
         display={`${isActive ? "flex" : "none"}`}
       >
         <Link
-          to="#"
+          as={LinkR}
+          to="/active-listings"
           _hover={{
             color: "#FFCE31",
           }}
@@ -158,7 +161,8 @@ const Navbar = ({ color }) => {
           Free Evaluation
         </Link>
         <Link
-          to="#"
+          as={LinkR}
+          to="/learn"
           _hover={{
             color: "#FFCE31",
           }}

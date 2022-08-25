@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import SellStorage from "./pages/SellStorage";
 import FreeEvaluation from "./pages/FreeEvaluation";
+import Learn from "./pages/Learn";
+import CourseDetailPage from "./pages/CourseDetailPage";
+import ActiveListings from "./pages/ActiveListings";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/sell-your-self-storage" element={<SellStorage />}></Route>
         <Route path="/free-evaluation" element={<FreeEvaluation />}></Route>
+        <Route path="/learn" element={<Learn />}></Route>
+        <Route path="/course-detail" element={<CourseDetailPage />}></Route>
+        <Route path="/active-listings" element={<ActiveListings />}></Route>
       </Routes>
     </>
   );
